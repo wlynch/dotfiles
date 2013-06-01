@@ -8,8 +8,8 @@ if [ ! -d "$SRCDIR" ] ; then
 fi
 
 cd $SRCDIR
-git submodules init
-git submodules update
+git submodule init
+git submodule update
 
 for FILE in `find "$SRCDIR" -type f` ; do
   NAME=`echo "$FILE" | sed -e "s|^$SRCDIR\/||"`
