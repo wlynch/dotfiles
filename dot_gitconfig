@@ -1,6 +1,10 @@
 [user]
 	name = Billy Lynch
 	email = billy@wlyn.ch 
-
 [color]
 	ui = true
+[pull]
+	ff = only
+[alias]
+    s = status
+    co = checkout
