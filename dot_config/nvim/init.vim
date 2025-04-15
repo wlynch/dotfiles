@@ -7,3 +7,5 @@ set smartindent
 
 set number
 set pastetoggle=<F2>
+set ruler
+filetype indent plugin on

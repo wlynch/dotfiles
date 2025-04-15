@@ -1,10 +1,22 @@
 [user]
 	name = Billy Lynch
-	email = billy@wlyn.ch 
+	email = billy@chainguard.dev
 [color]
 	ui = true
 [pull]
 	ff = only
 [alias]
-    s = status
-    co = checkout
+  s = status
+  co = checkout
+	recommit = !git commit -eF $(git rev-parse --git-dir)/COMMIT_EDITMSG
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[gpg]
+	format = x509
+[gpg "x509"]
+	program = gitsign
+[gitsign]
+	connectorID = https://accounts.google.com
+	matchCommitter = true
